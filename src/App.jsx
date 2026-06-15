@@ -289,26 +289,21 @@ Conclusion stratégique : En croisant analyse quantitative et observation qualit
         ce: 'CE5.01',
         ceLabel: 'CE5.01 - Structuration commerciale d\'une offre physique & digitale combinée',
         contexte: 'Startup entrepreneuriale réelle (Sénégal)',
-        summary: 'Création d\'une startup de cartes NFC, intégration de Wave/Orange Money et gestion d\'équipe.',
-        tech: ['NFC Technology SDK', 'Wave API', 'Orange Money API', 'Lean Canvas', 'Canva Marketing'],
+        summary: 'Plateforme SaaS de cartes NFC et networking avec billetterie événementielle et suggestions de profils par l\'IA (Genkit).',
+        tech: ['Next.js', 'Genkit AI (Gemini)', 'Firebase', 'NFC Tech', 'Wave/Orange Money APIs', 'Lean Canvas'],
         images: ['/assets/qr_pro_screenshot.png'],
         learnings: [
-          'Définition de modèles économiques (Freemium + matériel premium).',
-          'Mise en place de supply chain physique pour l\'importation/programmation de cartes NFC.',
-          'Intégration d\'APIs de paiements mobiles locales en Afrique de l\'Ouest (Wave & Orange Money).',
-          'Gestion d\'équipe pluridisciplinaire en phase de pré-lancement (de 3 à 5 personnes).'
+          'Modélisation et déploiement d\'une architecture Next.js / Firebase combinant matériel physique (NFC) et plateforme numérique SaaS.',
+          'Intégration de Genkit AI (Gemini) pour l\'analyse automatique et la suggestion d\'améliorations des profils professionnels.',
+          'Développement d\'un module d\'événements avec gestion des tickets d\'accès sécurisés et contrôle anti-fraude.',
+          'Intégration d\'APIs de paiement mobile locales en Afrique de l\'Ouest (Wave & Orange Money) pour les achats physiques et digitaux.',
+          'Définition et validation du modèle économique (Freemium + vente de matériel NFC personnalisé haut de gamme).'
         ],
-        contenu: `En semestre 3, j'ai lancé une startup réelle : QR PRO CREATOR. L'idée était innovante au contexte sénégalais - créer une plateforme permettant aux professionnels de générer des QR codes personnalisés et des cartes de visite digitales, complétée par des produits physiques (cartes NFC, autocollants).
+        contenu: `En semestre 3, j'ai lancé une startup réelle : QR PRO CREATOR. L'idée était d'introduire une solution innovante de networking digital et de personal branding au Sénégal — en proposant des cartes de visite physiques NFC associées à des profils professionnels en ligne générés par QR code.
 
-Démarrage et concrétisation : L'un des plus gros défis était de concrétiser l'idée en produit réel. Nous avons dû concevoir une plateforme web complète, intégrer les paiements (Wave, Orange Money), créer une supply chain pour les produits physiques.
+Concrétisation technologique & IA : Au-delà d'un simple annuaire de liens, la plateforme intègre des fonctionnalités avancées comme un module événementiel (comprenant la billetterie sécurisée et le contrôle d'accès par scan de tickets) ainsi qu'un conseiller de profil propulsé par l'IA via Genkit (Gemini) pour suggérer des optimisations de réseaux et de vCards aux utilisateurs.
 
-Équipe et gestion : J'ai commencé seul avec l'idée, puis recruté une équipe. Nous avons grandi de 3 à 5 personnes. J'ai utilisé Google Sheets pour tracker les tâches - simple mais efficace pour une startup en phase de lancement.
-
-Sensibilisation du marché : Le plus grand défi était de faire connaître une solution innovante dans un marché non préparé.
-
-Leçon critique : J'aurais dû créer du contenu marketing dès le départ. Avoir un bon produit ne suffit pas sans stratégie d'acquisition des clients.
-
-Modèle économique : Freemium (création gratuite) + produits payants (cartes NFC premium, autocollants, packs). Toujours en croissance.`
+Modèle économique et croissance : Le projet repose sur un modèle économique freemium couplé à la vente directe de cartes NFC personnalisées. Ce projet m'a permis d'appréhender la gestion opérationnelle, la logistique de supply chain physique, et l'intégration de solutions de paiements mobiles locales indispensables (Wave et Orange Money).`
       },
       {
         id: 2,
@@ -652,17 +647,18 @@ function App() {
     },
     {
       title: 'QR PRO CREATOR',
-      subtitle: 'FinTech, NFC Tech & Growth',
+      subtitle: 'Next.js, Genkit AI (Gemini), Firebase, NFC & FinTech',
       tagline: 'DIGITAL BRAND / HARDWARE STARTUP',
-      desc: 'Lancement d\'une startup physique et numérique en Afrique de l\'Ouest de cartes de visite NFC et profils professionnels en ligne. Gère la génération de profils, des paiements mobiles ainsi que la logistique d\'impression physique.',
+      desc: 'Plateforme de networking digital et de personal branding basée à Dakar. Permet de créer des profils professionnels en ligne avec génération automatique de QR codes, d\'intégrer des fonctionnalités de billetterie événementielle anti-fraude avec contrôle d\'accès, de suivre les statistiques de scans, et de recevoir des suggestions d\'amélioration de profil générées par l\'IA (Genkit AI / Gemini).',
       image: '/assets/qr_pro_screenshot.png',
       color: 'var(--accent-cyan)',
       siteUrl: 'https://qrprocreator.com',
       bullets: [
-        'Production et supply chain de cartes professionnelles NFC',
-        'Intégration de paiements mobiles d\'Afrique de l\'Ouest (Wave & Orange Money)',
-        'Déploiement de stratégies de croissance commerciale et de contenu marketing',
-        'Gestion agile d\'une équipe de 5 collaborateurs'
+        'Génération automatique de QR codes & profils professionnels avec export vCard',
+        'Intégration d\'IA (Genkit AI & Gemini) pour l\'analyse et l\'optimisation des profils',
+        'Billetterie événementielle et contrôle d\'accès anti-fraude avec scan de tickets',
+        'Système de paiement mobile d\'Afrique de l\'Ouest (Wave & Orange Money) et Stripe',
+        'Production et logistique de cartes de visite physiques équipées de puces NFC'
       ]
     },
     {
