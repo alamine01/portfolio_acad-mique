@@ -666,10 +666,10 @@ function App() {
       ]
     },
     {
-      title: 'MoodTrack & Festival Béziers',
-      subtitle: 'UX Research & Sprint Agile Management',
-      tagline: 'USER ORIENTED DESIGN / MANAGEMENT',
-      desc: 'Recherche ergonomique centrée utilisateur et management de projet événementiel. Comprend la conduite d\'entretiens UX semi-directifs, la définition de personas étudiants et la planification en cycles Scrum de supports de communication.',
+      title: 'MoodTrack',
+      subtitle: 'UX Research, UI Design & Mobile Prototyping',
+      tagline: 'USER ORIENTED DESIGN / HEALTH APP',
+      desc: 'Conception ergonomique et recherche utilisateur pour une application mobile visant à améliorer la santé physique et mentale des étudiants. Comprend la conduite d\'entretiens qualitatifs semi-directifs, la modélisation de personas précis basés sur les données du terrain et le prototypage interactif.',
       images: [
         '/assets/moodtrack/photo_1.png',
         '/assets/moodtrack/photo_2.png',
@@ -679,10 +679,10 @@ function App() {
       ],
       color: 'var(--accent-green)',
       bullets: [
-        'Conduite de protocoles de tests utilisateurs et entretiens de santé',
-        'Modélisation de 3 personas étudiants basés sur des données réelles',
-        'Structuration de sprints d\'équipe de 2 mois sur Jira',
-        'Conception de maquettes d\'interfaces web et mobiles interactives'
+        'Conduite d\'entretiens de santé et de tests utilisateurs semi-directifs',
+        'Modélisation de 3 personas étudiants basés sur des données réelles du terrain',
+        'Design d\'interface et prototypage mobile haute fidélité sur Figma',
+        'Optimisation de l\'architecture de l\'information et du parcours utilisateur'
       ]
     }
   ];
@@ -788,7 +788,7 @@ function App() {
             {[
               { val: '05', tag: 'MMI COMPÉTENCES', desc: 'Développement, Design, Com, Strategie, Gestion' },
               { val: '10', tag: 'LIVRABLES ACQUIS', desc: 'Preuves techniques et analyses réflexives' },
-              { val: '03', tag: 'PROJETS PHARES', desc: 'EdTech, FinTech & Recherche utilisateur' },
+              { val: '03', tag: 'PROJETS PHARES', desc: 'Asso Web, FinTech & Santé étudiante (UX)' },
               { val: '01', tag: 'STARTUP LANCÉE', desc: 'QR Pro Creator en production active' }
             ].map((s, idx) => (
               <div key={idx} className="glass-panel" style={{ padding: '2rem', borderRadius: '16px', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
