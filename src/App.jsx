@@ -289,22 +289,20 @@ Conclusion stratégique : En croisant analyse quantitative et observation qualit
         ce: 'CE5.01',
         ceLabel: 'CE5.01 - Structuration commerciale d\'une offre physique & digitale combinée',
         contexte: 'Startup entrepreneuriale réelle (Sénégal)',
-        summary: 'Création d\'une startup de cartes NFC de visite et de profils professionnels en ligne avec génération automatique de QR codes.',
-        tech: ['Next.js', 'Firebase', 'NFC Tech', 'Lean Canvas', 'Canva Marketing'],
+        summary: 'Startup de cartes de visite NFC et autocollants connectés par QR code pour la sécurisation d\'objets et le personal branding.',
+        tech: ['Next.js', 'Firebase', 'NFC & QR Tech', 'Lean Canvas', 'Supply Chain'],
         images: ['/assets/qr_pro_screenshot.png'],
         learnings: [
-          'Définition de modèles économiques (Freemium + matériel NFC premium).',
-          'Mise en place d\'une supply chain physique pour l\'importation et la programmation des cartes NFC.',
-          'Conception et développement de la plateforme web de profils numériques.',
-          'Gestion d\'équipe pluridisciplinaire en phase de pré-lancement (de 3 à 5 personnes).'
+          'Définition d\'un modèle économique combinant vente de matériel physique (cartes NFC, packs d\'autocollants) et service freemium.',
+          'Mise en place d\'une supply chain physique pour la programmation de puces NFC et l\'impression d\'autocollants résistants aux UV et à l\'eau.',
+          'Conception et développement d\'une plateforme web liant les supports physiques aux fiches objets ou profils de contacts.',
+          'Gestion d\'une équipe de 3 à 5 collaborateurs pour le développement et la logistique de livraison à Dakar et Thiès.'
         ],
-        contenu: `En semestre 3, j'ai lancé une startup réelle : QR PRO CREATOR. L'idée était innovante au contexte sénégalais — créer une plateforme permettant aux professionnels de générer des QR codes personnalisés et des cartes de visite digitales, complétée par des produits physiques (cartes NFC, autocollants).
+        contenu: `En semestre 3, j'ai lancé une startup réelle : QR PRO CREATOR. L'objectif était d'introduire des solutions de networking et de protection d'objets connectés au Sénégal, en associant des supports physiques à des plateformes numériques.
 
-Démarrage et concrétisation : L'un des plus gros défis était de concrétiser l'idée en produit réel. Nous avons dû concevoir une plateforme web complète, programmer les cartes de visite physiques avec technologie NFC, et structurer la logistique de distribution.
+Gamme de produits et technologie : La plateforme propose deux produits physiques majeurs : d'une part, des cartes de visite NFC personnalisées et résistantes pour le partage instantané de coordonnées professionnelles. D'autre part, des autocollants connectés par QR code (vendus en pack de 3) destinés à sécuriser des objets personnels comme des clés, ordinateurs ou bagages.
 
-Équipe et gestion : J'ai commencé seul avec l'idée, puis recruté une équipe de 3 à 5 personnes pour m'épauler. J'ai utilisé des outils collaboratifs pour tracker les tâches et coordonner la phase de lancement.
-
-Modèle économique : Nous avons validé un modèle économique freemium (création gratuite de profil en ligne) combiné à la vente de cartes NFC premium personnalisées.`
+Modèle économique et logistique : Le projet m'a permis d'appréhender la modélisation commerciale (packs d'autocollants, cartes premium, freemium) ainsi que la gestion de la chaîne logistique, de l'importation de puces NFC à la livraison physique des produits dans les villes de Dakar et Thiès.`
       },
       {
         id: 2,
@@ -648,18 +646,18 @@ function App() {
     },
     {
       title: 'QR PRO CREATOR',
-      subtitle: 'Next.js, Firebase, NFC Tech & Growth',
+      subtitle: 'Next.js, Firebase, NFC & QR Tech',
       tagline: 'DIGITAL BRAND / HARDWARE STARTUP',
-      desc: 'Lancement d\'une startup physique et numérique de cartes de visite NFC et de profils professionnels en ligne en Afrique de l\'Ouest. Elle permet aux professionnels de générer des profils numériques personnalisés accessibles par QR code et de partager leurs coordonnées instantanément.',
+      desc: 'Plateforme de networking et de sécurisation d\'objets. Elle propose des cartes de visite connectées NFC personnalisables pour le partage instantané de profils professionnels, ainsi que des autocollants intelligents (Smart Stickers QR) conçus pour identifier et sécuriser des objets personnels (clés, ordinateurs, bagages).',
       image: '/assets/qr_pro_screenshot.png',
       color: 'var(--accent-cyan)',
       siteUrl: 'https://qrprocreator.com',
       bullets: [
-        'Création de profils professionnels en ligne et génération de QR codes (export vCard)',
-        'Logistique et configuration d\'impression physique de cartes équipées de puces NFC',
-        'Hébergement et partage de documents professionnels sur la plateforme en ligne',
-        'Définition de stratégies de croissance commerciale et de contenu marketing',
-        'Gestion opérationnelle et suivi des tâches d\'une équipe de 5 collaborateurs'
+        'Création de profils professionnels numériques interactifs (vCard, réseaux sociaux)',
+        'Génération et programmation de cartes de visite physiques avec technologie NFC',
+        'Conception d\'autocollants intelligents QR codes pour identifier et sécuriser les objets',
+        'Logistique d\'impression et distribution physique (livraison gratuite à Dakar et Thiès)',
+        'Hébergement de documents (catalogues, présentations) et suivi des statistiques de scan'
       ]
     },
     {
