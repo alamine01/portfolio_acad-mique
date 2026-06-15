@@ -26,6 +26,15 @@ const competencesData = {
         contexte: 'SAÉ 3.01 (Projet Universitaire de fin de semestre)',
         summary: 'Développement d\'un jeu interactif multijoueur 2D avec gestion de physique et collisions.',
         tech: ['Phaser 3', 'JavaScript ES6', 'Canvas API', 'Audacity', 'Physics Engine'],
+        images: [
+          '/assets/phaser/phaser_1.png',
+          '/assets/phaser/phaser_2.png',
+          '/assets/phaser/phaser_3.png',
+          '/assets/phaser/phaser_4.png',
+          '/assets/phaser/phaser_5.png',
+          '/assets/phaser/phaser_6.png',
+          '/assets/phaser/phaser_7.png'
+        ],
         learnings: [
           'Architecture modulaire orientée objet avec le système de "Scenes" Phaser.',
           'Implémentation de moteurs physiques 2D, gestion des vecteurs de vitesse et de friction.',
