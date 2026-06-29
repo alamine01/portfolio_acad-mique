@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { 
   Calendar, Target, Code, 
   Palette, Lightbulb, Search, Rocket, CheckCircle2, FileText,
@@ -33,7 +33,8 @@ const competencesData = {
           '/assets/phaser/phaser_4.png',
           '/assets/phaser/phaser_5.png',
           '/assets/phaser/phaser_6.png',
-          '/assets/phaser/phaser_7.png'
+          '/assets/phaser/phaser_7.png',
+          '/assets/phaser/phaser_8.png'
         ],
         learnings: [
           'Architecture modulaire orientée objet avec le système de "Scenes" Phaser.',
@@ -59,7 +60,10 @@ Cependant, au fil du semestre, j'ai réalisé que ma passion réside ailleurs : 
         summary: 'Développement de la plateforme officielle de l\'AESM avec guide d\'intégration, événements et cagnottes en ligne.',
         tech: ['Next.js', 'React', 'Tailwind CSS', 'Supabase', 'Stripe API', 'Brevo API'],
         images: [
-          '/assets/aesm_mockup.jpg'
+          '/assets/aesm_mockup.jpg',
+          '/assets/aesm_1.png',
+          '/assets/aesm_2.png',
+          '/assets/aesm_3.png'
         ],
         learnings: [
           'Conception et déploiement d\'une architecture Next.js optimisée pour le SEO et la performance.',
@@ -97,7 +101,10 @@ Ce projet de stage marque une transition décisive dans mon parcours de dévelop
         contexte: 'SAÉ 3.03 (Projet Universitaire de Communication)',
         summary: 'Animation publicitaire de 15 secondes pour entreprises avec synchronisation voix off.',
         tech: ['After Effects', 'ElevenLabs AI', 'Adobe Illustrator', 'Premiere Pro'],
-        images: ['/assets/motion_aides_screenshot.png'],
+        images: [
+          '/assets/motion_aides_screenshot.png',
+          '/assets/motion_aides_2.png'
+        ],
         learnings: [
           'Rédaction de scénarios courts avec contrainte temporelle forte (format pub 15s).',
           'Utilisation d\'outils de voix off synthétique haut de gamme (ElevenLabs) pour la narration.',
@@ -125,6 +132,7 @@ Production : J'ai utilisé ElevenLabs pour la voix off, obtenant une narration p
         tech: ['Adobe Illustrator', 'After Effects', 'Figma Brand Guidelines', 'Photoshop'],
         pdfLink: '/assets/liqaverse/charte_graphique.pdf',
         images: [
+          '/assets/liqaverse/photo_0.png',
           '/assets/liqaverse/photo_9_2026-06-02_18-12-51.jpg',
           '/assets/liqaverse/photo_10_2026-06-02_18-12-51.jpg',
           '/assets/liqaverse/photo_11_2026-06-02_18-12-51.jpg',
@@ -168,6 +176,14 @@ Progression vs Trace 1 : Si le motion "Aides financières" m'a appris à condens
         ceLabel: 'CE2.03 - Cartographie et audit de communication digitale sur différents canaux',
         contexte: 'SAÉ 3.02 (Stratégie de communication de marque)',
         summary: 'Audit approfondi de la communication digitale et ciblage de deux marques majeures.',
+        images: [
+          '/assets/hydratis_1.png',
+          '/assets/hydratis_2.png',
+          '/assets/hydratis_3.png',
+          '/assets/hydratis_4.png',
+          '/assets/on_air_1.png',
+          '/assets/on_air_2.png'
+        ],
         tech: ['Canva Pro', 'Social Listening tools', 'Google Workspace'],
         learnings: [
           'Méthodologie d\'audit de réseaux sociaux (Instagram, LinkedIn, YouTube).',
@@ -193,7 +209,11 @@ Livrables : J'ai restitué cette analyse sous forme de présentation Canva, synt
         ceLabel: 'CE2.01 - Conception de formulaires inclusive, respectueuse et accessible',
         contexte: 'SAÉ 4.02 (Conception événementielle municipale)',
         summary: 'Gestion agile et conception inclusive de formulaires et de vidéos de promotion événementielle.',
-        tech: ['Jira Software', 'Figma Mockups', 'HTML5 Form API', 'Premiere Pro'],
+        images: [
+          '/assets/chandeleur_1.png',
+          '/assets/chandeleur_2.png',
+          '/assets/festival_mockup.png'
+        ],
         learnings: [
           'Application de normes d\'accessibilité (RGAA) pour la conception de formulaires.',
           'Rédaction de scripts narratifs de sensibilisation inclusive pour le grand public.',
@@ -262,6 +282,14 @@ Itération : Nous avons analysé systématiquement les suggestions des utilisate
         ceLabel: 'CE1.03 - Analyse statistique comparée de comptes de réseaux sociaux',
         contexte: 'SAÉ 3.02 (Traitement de données statistiques digitales)',
         summary: 'Analyses statistiques et comparaisons de métriques d\'engagement social média.',
+        images: [
+          '/assets/hydratis_1.png',
+          '/assets/hydratis_2.png',
+          '/assets/hydratis_3.png',
+          '/assets/hydratis_4.png',
+          '/assets/on_air_1.png',
+          '/assets/on_air_2.png'
+        ],
         tech: ['Microsoft Excel', 'Google Sheets Analytics', 'Meta Business Analytics'],
         learnings: [
           'Traitement et extraction de jeux de données sur réseaux sociaux (KPIs d\'abonnés, reach).',
@@ -300,7 +328,10 @@ Conclusion stratégique : En croisant analyse quantitative et observation qualit
         contexte: 'Startup entrepreneuriale réelle (Sénégal)',
         summary: 'Startup de cartes de visite NFC, autocollants connectés par QR code (sécurité objets) et billetterie événementielle anti-fraude.',
         tech: ['Next.js', 'Firebase', 'NFC & QR Tech', 'Lean Canvas', 'Supply Chain'],
-        images: ['/assets/qr_pro_screenshot.png'],
+        images: [
+          '/assets/qr_pro_screenshot.png',
+          '/assets/qr_pro_1.jpg'
+        ],
         learnings: [
           'Définition d\'un modèle économique combinant vente de matériel (cartes NFC, stickers) et services de billetterie événementielle.',
           'Mise en place d\'une supply chain physique pour la programmation de puces NFC et d\'autocollants résistants aux intempéries.',
@@ -324,7 +355,11 @@ Modèle économique et logistique : Le projet m'a permis d'appréhender la modé
         ceLabel: 'CE5.02 - Planification de sprints et animation des cérémonies de gestion de projet',
         contexte: 'SAÉ 4.02 (Projet Événementiel Agile)',
         summary: 'Gestion opérationnelle sous modèle Scrum/Jira pour des livrables de communication.',
-        tech: ['Jira Software', 'Slack integrations', 'Confluence Documentation', 'Agile Scrum Board'],
+        images: [
+          '/assets/chandeleur_1.png',
+          '/assets/chandeleur_2.png',
+          '/assets/festival_mockup.png'
+        ],
         learnings: [
           'Animation des cérémonies Scrum (Sprint Planning, Daily Standup, Sprint Retrospective).',
           'Gestion opérationnelle de backlog d\'équipe multi-profils (design, dev, com) sur Jira.',
@@ -615,6 +650,21 @@ function App() {
   const [selectedComp, setSelectedComp] = useState('develpper');
   const [activeTraceModal, setActiveTraceModal] = useState(null);
   const [featuredModalImg, setFeaturedModalImg] = useState(null);
+  const [fullscreenImg, setFullscreenImg] = useState(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setFullscreenImg(null);
+      }
+    };
+    if (fullscreenImg) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [fullscreenImg]);
 
   const handleScroll = (refName) => {
     const targetRef = {
@@ -643,7 +693,12 @@ function App() {
       subtitle: 'Next.js, Tailwind CSS, Supabase, Stripe & Brevo API',
       tagline: 'PLATEFORME ASSOCIATIVE / STAGE',
       desc: 'Création et déploiement de la plateforme officielle de l\'Association des Étudiants Sénégalais de Montpellier (AESM). Elle facilite l\'intégration des nouveaux arrivants via un guide interactif, propose un système de cagnottes solidaires en ligne et gère les événements et services de l\'association.',
-      images: ['/assets/aesm_mockup.jpg'],
+      images: [
+        '/assets/aesm_mockup.jpg',
+        '/assets/aesm_1.png',
+        '/assets/aesm_2.png',
+        '/assets/aesm_3.png'
+      ],
       color: 'var(--accent-blue)',
       siteUrl: 'https://www.assosaesm.fr/',
       bullets: [
@@ -659,7 +714,10 @@ function App() {
       subtitle: 'Next.js, Firebase, NFC & QR Event Tech',
       tagline: 'DIGITAL BRAND / HARDWARE STARTUP',
       desc: 'Plateforme de networking, de sécurisation d\'objets et de gestion événementielle. Propose des cartes de visite NFC personnalisables pour le partage instantané de contacts, des autocollants intelligents pour sécuriser des objets personnels, ainsi qu\'un système de billetterie en ligne avec génération de tickets par QR code unique pour prévenir les fraudes lors des événements.',
-      image: '/assets/qr_pro_screenshot.png',
+      images: [
+        '/assets/qr_pro_screenshot.png',
+        '/assets/qr_pro_1.jpg'
+      ],
       color: 'var(--accent-cyan)',
       siteUrl: 'https://qrprocreator.com',
       bullets: [
@@ -1154,13 +1212,32 @@ function App() {
                       border: '1px solid rgba(255,255,255,0.04)',
                       display: 'flex',
                       alignItems: 'center',
-                      justifyContent: 'center'
-                    }}>
+                      justifyContent: 'center',
+                      cursor: 'zoom-in',
+                      position: 'relative'
+                    }}
+                    onDoubleClick={() => setFullscreenImg(featuredModalImg || activeTraceModal.images[0])}
+                    title="Double-cliquez pour agrandir"
+                    >
                       <img 
                         src={featuredModalImg || activeTraceModal.images[0]} 
                         alt="Preuve" 
                         style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                       />
+                      <div style={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        right: '10px',
+                        background: 'rgba(3, 7, 18, 0.65)',
+                        padding: '0.25rem 0.5rem',
+                        borderRadius: '6px',
+                        fontSize: '0.65rem',
+                        color: 'rgba(255,255,255,0.7)',
+                        pointerEvents: 'none',
+                        border: '1px solid rgba(255,255,255,0.08)'
+                      }}>
+                        Double-clic pour agrandir
+                      </div>
                     </div>
 
                     {/* Thumbnail list */}
@@ -1171,6 +1248,8 @@ function App() {
                           <div 
                             key={idx}
                             onClick={() => setFeaturedModalImg(img)}
+                            onDoubleClick={() => setFullscreenImg(img)}
+                            title="Double-cliquez pour agrandir"
                             style={{
                               aspectRatio: '1',
                               borderRadius: '8px',
@@ -1213,16 +1292,18 @@ function App() {
                 </div>
 
                 {/* Technologies Stack */}
-                <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '16px', background: 'rgba(255, 255, 255, 0.01)', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  <h4 style={{ fontSize: '0.85rem', fontWeight: '800', color: '#ffffff', letterSpacing: '0.05em', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Wrench size={14} style={{ color: activeTraceModal.compColor }} /> Stack Technique
-                  </h4>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                    {activeTraceModal.tech.map((t, idx) => (
-                      <span key={idx} className="badge" style={{ background: 'rgba(255, 255, 255, 0.04)', borderColor: 'rgba(255, 255, 255, 0.08)', color: '#ffffff' }}>{t}</span>
-                    ))}
+                {(!activeTraceModal.titre.toLowerCase().includes('chandeleur') && activeTraceModal.tech) && (
+                  <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '16px', background: 'rgba(255, 255, 255, 0.01)', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                    <h4 style={{ fontSize: '0.85rem', fontWeight: '800', color: '#ffffff', letterSpacing: '0.05em', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <Wrench size={14} style={{ color: activeTraceModal.compColor }} /> Stack Technique
+                    </h4>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                      {activeTraceModal.tech.map((t, idx) => (
+                        <span key={idx} className="badge" style={{ background: 'rgba(255, 255, 255, 0.04)', borderColor: 'rgba(255, 255, 255, 0.08)', color: '#ffffff' }}>{t}</span>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
 
                 {/* Key Learnings */}
                 <div className="glass-panel" style={{ padding: '1.5rem', borderRadius: '16px', background: 'rgba(255, 255, 255, 0.01)', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -1242,6 +1323,66 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* FULLSCREEN IMAGE LIGHTBOX OVERLAY */}
+      {fullscreenImg && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'rgba(3, 7, 18, 0.95)',
+          backdropFilter: 'blur(20px)',
+          zIndex: 3000,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '2rem'
+        }}
+        onClick={() => setFullscreenImg(null)}
+        >
+          {/* Close button */}
+          <button 
+            onClick={() => setFullscreenImg(null)}
+            style={{
+              position: 'absolute',
+              top: '25px',
+              right: '25px',
+              background: 'rgba(255,255,255,0.06)',
+              border: 'none',
+              borderRadius: '50%',
+              width: '44px',
+              height: '44px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: '#ffffff',
+              cursor: 'pointer',
+              transition: 'background 0.2s',
+              zIndex: 3010
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.1)'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.06)'}
+          >
+            <X size={22} />
+          </button>
+          
+          <img 
+            src={fullscreenImg} 
+            alt="Grand format" 
+            style={{ 
+              maxWidth: '95vw', 
+              maxHeight: '90vh', 
+              objectFit: 'contain',
+              borderRadius: '8px',
+              border: '1px solid rgba(255,255,255,0.08)',
+              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.95)'
+            }}
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
 
